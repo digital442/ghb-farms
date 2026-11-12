@@ -37,7 +37,7 @@ export function ImageGallery({ images }: { images: GalleryImage[] }) {
           >
             <X className="h-8 w-8" />
           </button>
-          <div className="relative h-[80vh] w-full max-w-4xl">
+          <div className="relative h-[80vh] w-full max-w-4xl" onClick={(e) => e.stopPropagation()}>
             <Image
               src={images[activeIndex].src}
               alt={images[activeIndex].alt}
