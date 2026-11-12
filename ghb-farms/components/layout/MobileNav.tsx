@@ -18,7 +18,7 @@ export function MobileNav() {
           <Menu className="h-6 w-6 text-teal-dark" />
         </button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-full max-w-sm">
+      <SheetContent side="right" className="w-full max-w-sm" showCloseButton={false}>
         <div className="flex items-center justify-between p-4">
           <span className="font-heading text-lg font-semibold text-teal-dark">Menu</span>
           <button onClick={() => setOpen(false)} aria-label="Close menu">
