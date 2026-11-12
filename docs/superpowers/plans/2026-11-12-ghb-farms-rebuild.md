@@ -274,7 +274,7 @@ git commit -m "feat: add brand design tokens, fonts, and shadcn/ui components"
 - Create: `ghb-farms/types/content.ts`
 
 **Interfaces:**
-- Produces: `SectionRow`, `Card`, `NavItem`, `FarmLocation`, `NewsletterImage` types that every `content/*.ts` file and every component in Tasks 5-11 import and conform to.
+- Produces: `SectionRow`, `Card`, `NavItem`, `FarmLocation`, `GalleryImage` types that every `content/*.ts` file and every component in Tasks 5-11 import and conform to.
 
 - [ ] **Step 1: Write the shared types**
 
