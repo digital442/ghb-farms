@@ -40,10 +40,3 @@ export interface GalleryImage {
   src: string;
   alt: string;
 }
-
-export interface PageContent {
-  title: string;
-  hero: { eyebrow?: string; heading: string; image: { src: string; alt: string }; cta?: { label: string; href: string } };
-  sections: SectionRow[];
-  relatedCards?: Card[];
-}
