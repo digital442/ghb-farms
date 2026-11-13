@@ -13,7 +13,7 @@ export function RelatedCardGrid({ cards, heading = "Find out more" }: { cards: C
       >
         {cards.map((card) => (
           <Link
-            key={card.href}
+            key={`${card.heading}-${card.href}`}
             href={card.href}
             className="group overflow-hidden rounded-lg border border-grey/20 transition-shadow hover:shadow-lg"
           >

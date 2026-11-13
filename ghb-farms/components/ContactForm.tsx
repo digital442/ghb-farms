@@ -8,8 +8,23 @@ import { Textarea } from "@/components/ui/textarea";
 
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
 
+const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+const FORM_CONFIGURED = Boolean(WEB3FORMS_ACCESS_KEY) && WEB3FORMS_ACCESS_KEY !== "REPLACE_WITH_REAL_KEY_BEFORE_DEPLOY";
+
 export function ContactForm() {
   const [status, setStatus] = useState<SubmitStatus>("idle");
+
+  if (!FORM_CONFIGURED) {
+    return (
+      <p className="text-grey">
+        Our online form is temporarily unavailable. Please email us directly at{" "}
+        <a href="mailto:hr@ghbfarms.com" className="text-teal underline hover:text-gold">
+          hr@ghbfarms.com
+        </a>
+        .
+      </p>
+    );
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -17,7 +32,7 @@ export function ContactForm() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
-    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "");
+    formData.append("access_key", WEB3FORMS_ACCESS_KEY ?? "");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -40,6 +55,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <input type="hidden" name="subject" value="New contact form submission from ghbfarms.co.za" />
       <input type="hidden" name="from_name" value="GHB Farms Website" />
+      <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
       <div>
         <label htmlFor="name" className="mb-1 block font-heading text-sm font-medium text-teal-dark">
           Name

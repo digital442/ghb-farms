@@ -2,7 +2,7 @@
 import type { SectionRow } from "@/types/content";
 
 export const heroContent = {
-  eyebrow: "Farm-to-fork",
+  eyebrow: "Farm to Fork",
   heading: "Processing Plants, Distribution & Retail",
   image: { src: "/images/farm-to-fork/distribution-2-1.jpg", alt: "Processing, distribution, and retail at GHB Farms" },
 };

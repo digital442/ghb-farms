@@ -2,7 +2,7 @@
 import type { SectionRow } from "@/types/content";
 
 export const heroContent = {
-  eyebrow: "S.A.F.E.",
+  eyebrow: "S.A.F.E",
   heading: "Accountability is at the core of our farming practices.",
   image: { src: "/images/accountable/GHB-Farms-Accountability.jpg", alt: "Accountability practices at GHB Farms" },
 };

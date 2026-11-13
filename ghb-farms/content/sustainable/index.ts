@@ -2,7 +2,7 @@
 import type { SectionRow, Card } from "@/types/content";
 
 export const heroContent = {
-  eyebrow: "S.A.F.E.",
+  eyebrow: "S.A.F.E",
   heading: "Environmental Sustainability, Sow-Friendly Practices, Pig Welfare and Biosecurity.",
   image: { src: "/images/sustainable/GHB-Farms-Sustainable-Pig-Welfare.png", alt: "GHB Farms sustainable farming practices" },
 };

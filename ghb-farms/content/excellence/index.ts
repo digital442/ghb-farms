@@ -2,7 +2,7 @@
 import type { SectionRow } from "@/types/content";
 
 export const heroContent = {
-  eyebrow: "S.a.f.e.",
+  eyebrow: "S.A.F.E",
   heading: "We are a forward-looking farm and strive to remain abreast of - if not to lead - innovation and trends in pig farming",
   image: { src: "/images/excellence/excellence.jpg", alt: "Excellence and innovation at GHB Farms" },
 };

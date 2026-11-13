@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { newsletterList } from "@/content/news";
+
+export const metadata: Metadata = {
+  title: "News | GHB Farms",
+  description: "Stay up to date with GHB Farms and the pork industry at large — read our latest newsletters.",
+};
 
 export default function NewsPage() {
   return (

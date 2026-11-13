@@ -4,7 +4,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { navItems } from "@/content/nav";
 
 export function MobileNav() {
@@ -14,13 +14,13 @@ export function MobileNav() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <button className="md:hidden" aria-label="Open menu">
+        <button className="lg:hidden" aria-label="Open menu">
           <Menu className="h-6 w-6 text-teal-dark" />
         </button>
       </SheetTrigger>
       <SheetContent side="right" className="w-full max-w-sm" showCloseButton={false}>
         <div className="flex items-center justify-between p-4">
-          <span className="font-heading text-lg font-semibold text-teal-dark">Menu</span>
+          <SheetTitle className="font-heading text-lg font-semibold text-teal-dark">Menu</SheetTitle>
           <button onClick={() => setOpen(false)} aria-label="Close menu">
             <X className="h-6 w-6 text-teal-dark" />
           </button>

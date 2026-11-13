@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import { ImageGallery } from "@/components/ImageGallery";
 import { mayImages } from "@/content/news";
+
+export const metadata: Metadata = {
+  title: "May Newsletter | GHB Farms",
+  description: "Read the GHB Farms May newsletter — stay up to date with GHB Farms and the pork industry at large.",
+};
 
 export default function MayNewsletterPage() {
   return (

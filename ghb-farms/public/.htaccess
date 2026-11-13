@@ -1,0 +1,9 @@
+ErrorDocument 404 /404.html
+
+RedirectMatch 301 ^/heritage/?$ /about-us/#heritage
+RedirectMatch 301 ^/contact-us/?$ /contact/
+RedirectMatch 301 ^/genetics/?$ /excellence/genetics/
+RedirectMatch 301 ^/feedmill/?$ /conservation/
+RedirectMatch 301 ^/our-promise/?$ /safe/
+RedirectMatch 301 ^/march-newsletter/?$ /news/
+RedirectMatch 301 ^/wp-content/uploads/2023/02/1\.Privacy-Statement\.docx\.pdf$ /documents/GHB-Farms-Privacy-Statement.pdf

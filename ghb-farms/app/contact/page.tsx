@@ -1,7 +1,13 @@
 // ghb-farms/app/contact/page.tsx
+import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { ContactLocations } from "@/components/ContactLocations";
 import { farmLocations } from "@/content/contact-locations";
+
+export const metadata: Metadata = {
+  title: "Contact | GHB Farms",
+  description: "Stay up to date with GHB Farms and the pork industry at large. Send us a message or get directions to our farms.",
+};
 
 export default function ContactPage() {
   return (
