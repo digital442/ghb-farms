@@ -1,5 +1,5 @@
 // ghb-farms/content/excellence/index.ts
-import type { SectionRow } from "@/types/content";
+import type { Card, SectionRow } from "@/types/content";
 
 export const heroContent = {
   eyebrow: "S.A.F.E",
@@ -33,4 +33,9 @@ export const sections: SectionRow[] = [
     imageSide: "left",
     cta: { label: "Learn about Farm to fork", href: "/farm-to-fork" },
   },
+];
+
+export const pillarCards: Card[] = [
+  { heading: "Association with Eskort", href: "/excellence/association-with-eskort", image: { src: "/images/excellence/GHB-Farms-Accountable-Excellance-Our-Association-with-Eskort-01.png", alt: "GHB Farms association with Eskort" } },
+  { heading: "Genetics", href: "/excellence/genetics", image: { src: "/images/excellence/genetics-1.jpg", alt: "GHB Farms genetics program" } },
 ];

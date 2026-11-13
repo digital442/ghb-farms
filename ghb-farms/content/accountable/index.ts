@@ -1,5 +1,5 @@
 // ghb-farms/content/accountable/index.ts
-import type { SectionRow } from "@/types/content";
+import type { Card, SectionRow } from "@/types/content";
 
 export const heroContent = {
   eyebrow: "S.A.F.E",
@@ -29,4 +29,9 @@ export const sections: SectionRow[] = [
     imageSide: "left",
     cta: { label: "Learn about Farm to Fork", href: "/farm-to-fork" },
   },
+];
+
+export const pillarCards: Card[] = [
+  { heading: "Quality Assurance", href: "/accountable/quality-assurance", image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-John-Deere.png", alt: "Quality assurance practices at GHB Farms" } },
+  { heading: "Food Safety & Hygiene Practices", href: "/accountable/food-safety-hygiene-practices", image: { src: "/images/accountable/GHB-Farms-Accountable-Food-Safety-Hygiene-Practices-Food.png", alt: "Food safety and hygiene practices at GHB Farms" } },
 ];

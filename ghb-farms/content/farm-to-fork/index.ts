@@ -1,5 +1,5 @@
 // ghb-farms/content/farm-to-fork/index.ts
-import type { SectionRow } from "@/types/content";
+import type { Card, SectionRow } from "@/types/content";
 
 export const heroContent = {
   eyebrow: "S.A.F.E",
@@ -18,4 +18,10 @@ export const sections: SectionRow[] = [
     imageSide: "right",
     cta: { label: "Learn about Excellence", href: "/excellence" },
   },
+];
+
+export const pillarCards: Card[] = [
+  { heading: "Processing Plants, Distribution & Retail", href: "/farm-to-fork/processing-plants-distribution-retail", image: { src: "/images/farm-to-fork/distribution-2-1.jpg", alt: "Processing, distribution, and retail at GHB Farms" } },
+  { heading: "Responsibility", href: "/farm-to-fork/responsibility", image: { src: "/images/farm-to-fork/GHB-Farms-Accountable-Farm-to-Fork-Responsibility-Container.png", alt: "Responsibility practices at GHB Farms" } },
+  { heading: "Traceability", href: "/farm-to-fork/traceability", image: { src: "/images/farm-to-fork/GHB-Farms-Accountable-Form-to-Fork-BG.png", alt: "Traceability systems at GHB Farms" } },
 ];

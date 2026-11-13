@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { SectionStack } from "@/components/SectionStack";
-import { heroContent, sections } from "@/content/excellence";
+import { RelatedCardGrid } from "@/components/RelatedCardGrid";
+import { heroContent, sections, pillarCards } from "@/content/excellence";
 
 export const metadata: Metadata = {
   title: "Excellence | GHB Farms",
@@ -14,6 +15,7 @@ export default function ExcellencePage() {
     <>
       <Hero {...heroContent} />
       <SectionStack sections={sections} />
+      <RelatedCardGrid cards={pillarCards} heading="Explore Excellence" />
     </>
   );
 }
