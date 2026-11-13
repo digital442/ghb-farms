@@ -52,7 +52,7 @@ export function Footer() {
             <ul className="mt-2 space-y-1 text-sm">
               <li>
                 <a
-                  href="/wp-content/uploads/2023/02/1.Privacy-Statement.docx.pdf"
+                  href="/documents/GHB-Farms-Privacy-Statement.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gold"
