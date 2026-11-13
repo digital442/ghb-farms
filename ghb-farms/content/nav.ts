@@ -9,6 +9,7 @@ export const navItems: NavItem[] = [
     label: "S.A.F.E",
     href: "/safe",
     children: [
+      { label: "Overview", href: "/safe" },
       { label: "Sustainable", href: "/sustainable" },
       { label: "Environmental Sustainability", href: "/sustainable/enviromental-sustainability" },
       { label: "Precision Soil Analysis", href: "/sustainable/precision-soil-analysis" },
