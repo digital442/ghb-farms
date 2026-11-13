@@ -10,6 +10,7 @@ import { navItems } from "@/content/nav";
 export function MobileNav() {
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [expandedGroup, setExpandedGroup] = useState<string | null>(null);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -31,23 +32,64 @@ export function MobileNav() {
               <div key={item.label}>
                 <button
                   className="flex w-full items-center justify-between py-2 font-heading text-base font-medium text-teal-dark"
-                  onClick={() => setExpanded(expanded === item.label ? null : item.label)}
+                  onClick={() => {
+                    setExpanded(expanded === item.label ? null : item.label);
+                    setExpandedGroup(null);
+                  }}
                 >
                   {item.label}
                   <ChevronDown className={`h-4 w-4 transition-transform ${expanded === item.label ? "rotate-180" : ""}`} />
                 </button>
                 {expanded === item.label && (
                   <div className="flex flex-col gap-1 pl-4">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="py-2 text-sm text-teal-dark"
-                        onClick={() => setOpen(false)}
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                    {item.children.map((child) =>
+                      child.children ? (
+                        <div key={child.href}>
+                          <div className="flex items-center justify-between">
+                            <Link
+                              href={child.href}
+                              className="py-2 text-sm font-medium text-teal-dark"
+                              onClick={() => setOpen(false)}
+                            >
+                              {child.label}
+                            </Link>
+                            <button
+                              aria-label={`Toggle ${child.label} submenu`}
+                              aria-expanded={expandedGroup === child.label}
+                              onClick={() => setExpandedGroup(expandedGroup === child.label ? null : child.label)}
+                              className="p-2"
+                            >
+                              <ChevronDown
+                                className={`h-4 w-4 transition-transform ${expandedGroup === child.label ? "rotate-180" : ""}`}
+                              />
+                            </button>
+                          </div>
+                          {expandedGroup === child.label && (
+                            <div className="flex flex-col gap-1 pl-4">
+                              {child.children.map((grandchild) => (
+                                <Link
+                                  key={grandchild.href}
+                                  href={grandchild.href}
+                                  className="py-2 text-sm text-teal-dark"
+                                  onClick={() => setOpen(false)}
+                                >
+                                  {grandchild.label}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ) : (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="py-2 text-sm text-teal-dark"
+                          onClick={() => setOpen(false)}
+                        >
+                          {child.label}
+                        </Link>
+                      ),
+                    )}
                   </div>
                 )}
               </div>
