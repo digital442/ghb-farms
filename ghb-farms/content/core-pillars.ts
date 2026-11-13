@@ -12,7 +12,7 @@ export const sections: SectionRow[] = [
     heading: "Topigs research team strives to push the envelope by developing new technology in the genetics industry.",
     body: [
       "All GHB Farms herds are bred by Topigs Norsvin, the world leader in innovative swine genetics, providing breeding lines that produce the best quality stock for efficient farming and top-quality pork products.",
-      "For more information about Topigs Norsvin, visit topigsnorsvin.co.za.",
+      "For more information about Topigs Norsvin, visit www.topigsnorsvin.co.za.",
     ],
     image: { src: "/images/core-pillars/GHB-Farms-Core-Pillars-Genetics.png", alt: "Topigs Norsvin genetics partnership" },
     imageSide: "right",

@@ -53,7 +53,7 @@ export function SectionStack({ sections }: { sections: SectionRow[] }) {
             {section.bullets && (
               <ul className="mt-4 list-disc space-y-2 pl-5 text-grey">
                 {section.bullets.map((bullet, j) => (
-                  <li key={j}>{bullet}</li>
+                  <li key={j}>{linkifyParagraph(bullet)}</li>
                 ))}
               </ul>
             )}
