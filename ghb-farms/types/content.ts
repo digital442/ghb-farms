@@ -7,6 +7,7 @@ export interface SectionRow {
   bullets?: string[];
   quote?: { text: string; attribution?: string };
   image: { src: string; alt: string };
+  imageFit?: "cover" | "contain";
   imageSide: "left" | "right";
   cta?: { label: string; href: string };
   pdfLinks?: { label: string; href: string }[];

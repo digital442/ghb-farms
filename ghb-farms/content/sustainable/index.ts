@@ -15,6 +15,7 @@ export const sections: SectionRow[] = [
       "The goal of sustainable farming is to meet society's needs in the present without compromising the ability of future generations to meet their own needs.",
     ],
     image: { src: "/images/sustainable/GHB-Farm-Circular-Economy.svg", alt: "GHB Farms circular economy diagram" },
+    imageFit: "contain",
     imageSide: "right",
     cta: { label: "Learn about Accountable", href: "/accountable" },
   },

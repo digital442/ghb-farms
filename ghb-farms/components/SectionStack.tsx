@@ -38,7 +38,12 @@ export function SectionStack({ sections }: { sections: SectionRow[] }) {
           }`}
         >
           <div className="relative h-72 w-full md:h-96 md:w-1/2">
-            <Image src={section.image.src} alt={section.image.alt} fill className="rounded-lg object-cover" />
+            <Image
+              src={section.image.src}
+              alt={section.image.alt}
+              fill
+              className={`rounded-lg ${section.imageFit === "contain" ? "object-contain" : "object-cover"}`}
+            />
           </div>
           <div className="w-full md:w-1/2">
             {section.eyebrow && (
