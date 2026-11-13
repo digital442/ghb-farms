@@ -7,9 +7,13 @@ export function RelatedCardGrid({ cards, heading = "Find out more" }: { cards: C
     <div className="mx-auto max-w-6xl px-4 py-12 md:px-8">
       <h2 className="mb-6 text-center font-heading text-2xl font-bold text-teal-dark">{heading}</h2>
       <div
-        className={`grid grid-cols-1 gap-6 sm:grid-cols-2 ${cards.length >= 3 ? "lg:grid-cols-3" : ""} ${
-          cards.length >= 4 ? "lg:grid-cols-4" : ""
-        }`}
+        className={
+          cards.length === 1
+            ? "mx-auto max-w-sm"
+            : `grid grid-cols-1 gap-6 sm:grid-cols-2 ${cards.length >= 3 ? "lg:grid-cols-3" : ""} ${
+                cards.length >= 4 ? "lg:grid-cols-4" : ""
+              }`
+        }
       >
         {cards.map((card) => (
           <Link
