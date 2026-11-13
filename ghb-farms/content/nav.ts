@@ -49,6 +49,5 @@ export const navItems: NavItem[] = [
   },
   { label: "Community", href: "/community" },
   { label: "Conservation", href: "/conservation" },
-  { label: "News", href: "/news" },
   { label: "Contact", href: "/contact" },
 ];
