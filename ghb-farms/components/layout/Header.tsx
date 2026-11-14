@@ -23,7 +23,7 @@ export function Header() {
             item.children ? (
               <div
                 key={item.label}
-                className="relative"
+                className="group relative [@media(hover:hover)_and_(pointer:fine)]:[&:hover>div]:visible [@media(hover:hover)_and_(pointer:fine)]:[&:hover>div]:opacity-100"
                 onBlur={(e) => {
                   if (!e.currentTarget.contains(e.relatedTarget as Node)) {
                     setOpenMenu(null);
