@@ -52,7 +52,7 @@ export function Footer() {
             <ul className="mt-2 space-y-1 text-sm">
               <li>
                 <a
-                  href="/documents/GHB-Farms-Privacy-Statement.pdf"
+                  href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/documents/GHB-Farms-Privacy-Statement.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gold"
