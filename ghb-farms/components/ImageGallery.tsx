@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 import type { GalleryImage } from "@/types/content";
+import { Reveal } from "@/components/Reveal";
 
 export function ImageGallery({ images }: { images: GalleryImage[] }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -13,14 +14,15 @@ export function ImageGallery({ images }: { images: GalleryImage[] }) {
     <div className="mx-auto max-w-6xl px-4 py-12 md:px-8">
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
         {images.map((image, i) => (
-          <button
-            key={image.src}
-            onClick={() => setActiveIndex(i)}
-            className="relative aspect-square overflow-hidden rounded-lg"
-            aria-label={`View larger image: ${image.alt}`}
-          >
-            <Image src={image.src} alt={image.alt} fill className="object-cover transition-transform hover:scale-105" />
-          </button>
+          <Reveal key={image.src} delayMs={(i % 8) * 60}>
+            <button
+              onClick={() => setActiveIndex(i)}
+              className="relative aspect-square w-full overflow-hidden rounded-lg"
+              aria-label={`View larger image: ${image.alt}`}
+            >
+              <Image src={image.src} alt={image.alt} fill className="object-cover transition-transform hover:scale-105" />
+            </button>
+          </Reveal>
         ))}
       </div>
       {activeIndex !== null && (

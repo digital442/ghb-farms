@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Card } from "@/types/content";
+import { Reveal } from "@/components/Reveal";
 
 export function RelatedCardGrid({ cards, heading = "Find out more" }: { cards: Card[]; heading?: string }) {
   return (
@@ -15,19 +16,20 @@ export function RelatedCardGrid({ cards, heading = "Find out more" }: { cards: C
               }`
         }
       >
-        {cards.map((card) => (
-          <Link
-            key={`${card.heading}-${card.href}`}
-            href={card.href}
-            className="group overflow-hidden rounded-lg border border-grey/20 transition-shadow hover:shadow-lg"
-          >
-            <div className="relative h-40 w-full">
-              <Image src={card.image.src} alt={card.image.alt} fill className="object-cover transition-transform group-hover:scale-105" />
-            </div>
-            <div className="bg-white p-4">
-              <h3 className="font-heading font-semibold text-teal-dark">{card.heading}</h3>
-            </div>
-          </Link>
+        {cards.map((card, i) => (
+          <Reveal key={`${card.heading}-${card.href}`} delayMs={i * 80}>
+            <Link
+              href={card.href}
+              className="group block overflow-hidden rounded-lg border border-grey/20 transition-shadow hover:shadow-lg"
+            >
+              <div className="relative h-40 w-full">
+                <Image src={card.image.src} alt={card.image.alt} fill className="object-cover transition-transform group-hover:scale-105" />
+              </div>
+              <div className="bg-white p-4">
+                <h3 className="font-heading font-semibold text-teal-dark">{card.heading}</h3>
+              </div>
+            </Link>
+          </Reveal>
         ))}
       </div>
     </div>
