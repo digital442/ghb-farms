@@ -21,8 +21,11 @@ export function PillarGrid() {
             <div className="relative h-48 w-full">
               <Image src={pillar.image} alt={pillar.label} fill className="object-cover transition-transform group-hover:scale-105" />
             </div>
-            <div className="bg-white p-4 text-center">
-              <h3 className="font-heading font-semibold text-teal-dark">{pillar.label}</h3>
+            <div className="bg-gold p-4 text-center">
+              <h3 className="font-heading text-[21px] font-semibold uppercase text-white">
+                <span className="text-[26px]">{pillar.label.charAt(0)}</span>
+                {pillar.label.slice(1)}
+              </h3>
             </div>
           </Link>
         </Reveal>
