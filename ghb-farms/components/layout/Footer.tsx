@@ -49,9 +49,9 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col md:items-end">
+          <div className="flex flex-col">
             <h3 className="font-heading text-lg font-semibold text-gold">Legal</h3>
-            <ul className="mt-2 space-y-1 text-sm md:text-right">
+            <ul className="mt-2 space-y-1 text-sm">
               <li>
                 <a
                   href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/documents/GHB-Farms-Privacy-Statement.pdf`}
@@ -75,9 +75,9 @@ export function Footer() {
               height={96}
               className="mt-6"
             />
+            <p className="mt-6 text-xs text-white/70">© {new Date().getFullYear()} GHB Farms. All rights reserved.</p>
           </div>
         </div>
-        <p className="mt-8 text-xs text-white/70">© {new Date().getFullYear()} GHB Farms. All rights reserved.</p>
       </div>
     </footer>
   );
