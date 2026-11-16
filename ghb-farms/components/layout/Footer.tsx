@@ -24,7 +24,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-10 md:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="font-heading text-lg font-semibold text-gold">GHB Farms</h3>
+            <h3 className="font-heading text-xl font-bold uppercase text-gold">GHB Farms</h3>
             <p className="mt-2 text-sm">Since 1955</p>
             <p className="mt-4 text-sm">hr@ghbfarms.com</p>
             <p className="mt-1 text-sm">+27 (0)12 940 4430</p>
@@ -38,7 +38,7 @@ export function Footer() {
             </a>
           </div>
           <div>
-            <h3 className="font-heading text-lg font-semibold text-gold">Our Farms</h3>
+            <h3 className="font-heading text-xl font-bold uppercase text-gold">Our Farms</h3>
             <ul className="mt-2 space-y-1 text-sm">
               {farmLocations.map((farm) => (
                 <li key={farm.name}>
@@ -50,7 +50,7 @@ export function Footer() {
             </ul>
           </div>
           <div className="flex flex-col">
-            <h3 className="font-heading text-lg font-semibold text-gold">Legal</h3>
+            <h3 className="font-heading text-xl font-bold uppercase text-gold">Legal</h3>
             <ul className="mt-2 space-y-1 text-sm">
               <li>
                 <a

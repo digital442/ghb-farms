@@ -17,7 +17,9 @@ export default function HomePage() {
       <Hero {...heroContent} />
       <PillarGrid />
       <SectionStack sections={goldStandardSections} />
-      <RelatedCardGrid cards={discoverCards} heading="Discover our farm" />
+      <div className="border-t-4 border-gold bg-teal-dark/5">
+        <RelatedCardGrid cards={discoverCards} heading="Discover our farm" />
+      </div>
     </>
   );
 }
