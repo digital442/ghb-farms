@@ -1,4 +1,5 @@
 // ghb-farms/components/layout/Footer.tsx
+import Image from "next/image";
 import Link from "next/link";
 import { farmLocations } from "@/content/contact-locations";
 
@@ -23,9 +24,10 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-10 md:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="font-heading text-lg font-semibold">GHB Farms</h3>
+            <h3 className="font-heading text-lg font-semibold text-gold">GHB Farms</h3>
             <p className="mt-2 text-sm">Since 1955</p>
             <p className="mt-4 text-sm">hr@ghbfarms.com</p>
+            <p className="mt-1 text-sm">+27 (0)12 940 4430</p>
             <a
               href="https://www.facebook.com/ghbfarms/"
               target="_blank"
@@ -36,7 +38,7 @@ export function Footer() {
             </a>
           </div>
           <div>
-            <h3 className="font-heading text-lg font-semibold">Our Farms</h3>
+            <h3 className="font-heading text-lg font-semibold text-gold">Our Farms</h3>
             <ul className="mt-2 space-y-1 text-sm">
               {farmLocations.map((farm) => (
                 <li key={farm.name}>
@@ -47,9 +49,9 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          <div>
-            <h3 className="font-heading text-lg font-semibold">Legal</h3>
-            <ul className="mt-2 space-y-1 text-sm">
+          <div className="flex flex-col md:items-end">
+            <h3 className="font-heading text-lg font-semibold text-gold">Legal</h3>
+            <ul className="mt-2 space-y-1 text-sm md:text-right">
               <li>
                 <a
                   href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/documents/GHB-Farms-Privacy-Statement.pdf`}
@@ -66,6 +68,13 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
+            <Image
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/safe/GHB-Farms-SAFE-Stamp.svg`}
+              alt="S.A.F.E. - Sustainable, Accountable, Farm to Fork, Excellence"
+              width={96}
+              height={96}
+              className="mt-6"
+            />
           </div>
         </div>
         <p className="mt-8 text-xs text-white/70">© {new Date().getFullYear()} GHB Farms. All rights reserved.</p>
