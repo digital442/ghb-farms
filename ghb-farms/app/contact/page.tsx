@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { ContactLocations } from "@/components/ContactLocations";
-import { farmLocations } from "@/content/contact-locations";
+import { farmLocations, headOffice } from "@/content/contact-locations";
 
 export const metadata: Metadata = {
   title: "Contact | GHB Farms",
@@ -26,7 +26,13 @@ export default function ContactPage() {
         </div>
         <div>
           <h2 className="font-heading text-2xl font-bold text-teal-dark">Get Directions</h2>
-          <div className="mt-4">
+          <div className="mt-4 rounded-lg border border-grey/20 bg-white p-4">
+            <h3 className="font-heading font-semibold text-teal-dark">Head Office</h3>
+            <p className="mt-2 text-sm text-grey">{headOffice.address}</p>
+            <p className="mt-2 text-sm text-grey">{headOffice.phone}</p>
+            <p className="text-sm text-grey">{headOffice.email}</p>
+          </div>
+          <div className="mt-6">
             <ContactLocations locations={farmLocations} />
           </div>
         </div>
