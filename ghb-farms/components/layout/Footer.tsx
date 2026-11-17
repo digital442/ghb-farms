@@ -1,6 +1,5 @@
 // ghb-farms/components/layout/Footer.tsx
 import Image from "next/image";
-import Link from "next/link";
 import { farmLocations, headOffice } from "@/content/contact-locations";
 
 // lucide-react 1.72 (installed in this project) dropped brand/social icons,
@@ -24,7 +23,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-10 md:px-8">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
-            <h3 className="font-heading text-xl font-bold uppercase text-gold">GHB Farms</h3>
+            <h3 className="font-heading text-xl font-bold uppercase text-gold">Contact</h3>
             <p className="mt-2 text-sm">Since 1955</p>
             <p className="mt-4 text-sm">hr@ghbfarms.com</p>
             <p className="mt-1 text-sm">+27 (0)12 940 4430</p>
@@ -40,8 +39,6 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-xl font-bold uppercase text-gold">Head Office</h3>
             <p className="mt-2 text-sm">{headOffice.address}</p>
-            <p className="mt-2 text-sm">{headOffice.phone}</p>
-            <p className="text-sm">{headOffice.email}</p>
           </div>
           <div>
             <h3 className="font-heading text-xl font-bold uppercase text-gold">Our Farms</h3>
@@ -56,32 +53,21 @@ export function Footer() {
             </ul>
           </div>
           <div className="flex flex-col">
-            <h3 className="font-heading text-xl font-bold uppercase text-gold">Legal</h3>
-            <ul className="mt-2 space-y-1 text-sm">
-              <li>
-                <a
-                  href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/documents/GHB-Farms-Privacy-Statement.pdf`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gold"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-gold">
-                  Contact
-                </Link>
-              </li>
-            </ul>
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/safe/GHB-Farms-SAFE-Stamp.svg`}
               alt="S.A.F.E. - Sustainable, Accountable, Farm to Fork, Excellence"
               width={96}
               height={96}
-              className="mt-6"
             />
             <p className="mt-6 text-xs text-white/70">© {new Date().getFullYear()} GHB Farms. All rights reserved.</p>
+            <a
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/documents/GHB-Farms-Privacy-Statement.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 text-xs text-white/70 hover:text-gold"
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>
