@@ -28,7 +28,13 @@ export default function ContactPage() {
           <h2 className="font-heading text-2xl font-bold text-teal-dark">Get Directions</h2>
           <div className="mt-4 rounded-lg border border-grey/20 bg-white p-4">
             <h3 className="font-heading font-semibold text-teal-dark">Head Office</h3>
-            <p className="mt-2 text-sm text-grey">{headOffice.address}</p>
+            <p className="mt-2 text-sm text-grey">
+              {headOffice.addressLines.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </p>
             <p className="mt-2 text-sm text-grey">{headOffice.phone}</p>
             <p className="text-sm text-grey">{headOffice.email}</p>
           </div>

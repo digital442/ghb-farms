@@ -38,7 +38,13 @@ export function Footer() {
           </div>
           <div>
             <h3 className="font-heading text-xl font-bold uppercase text-gold">Head Office</h3>
-            <p className="mt-2 text-sm">{headOffice.address}</p>
+            <p className="mt-2 text-sm">
+              {headOffice.addressLines.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </p>
           </div>
           <div>
             <h3 className="font-heading text-xl font-bold uppercase text-gold">Our Farms</h3>

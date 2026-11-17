@@ -43,5 +43,5 @@ export const farmLocations: FarmLocation[] = [
 export const headOffice = {
   phone: "+27 (0)12 940 4430",
   email: "hr@ghbfarms.com",
-  address: "232 Meerlust Road, Equestria, Pretoria, 0184",
+  addressLines: ["232 Meerlust Road", "Equestria", "Pretoria", "0184"],
 };
