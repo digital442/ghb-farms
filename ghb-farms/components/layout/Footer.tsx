@@ -1,7 +1,7 @@
 // ghb-farms/components/layout/Footer.tsx
 import Image from "next/image";
 import Link from "next/link";
-import { farmLocations } from "@/content/contact-locations";
+import { farmLocations, headOffice } from "@/content/contact-locations";
 
 // lucide-react 1.72 (installed in this project) dropped brand/social icons,
 // so the Facebook glyph is inlined here instead.
@@ -22,7 +22,7 @@ export function Footer() {
   return (
     <footer className="bg-teal-dark text-white">
       <div className="mx-auto max-w-7xl px-4 py-10 md:px-8">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-4">
           <div>
             <h3 className="font-heading text-xl font-bold uppercase text-gold">GHB Farms</h3>
             <p className="mt-2 text-sm">Since 1955</p>
@@ -36,6 +36,12 @@ export function Footer() {
             >
               <FacebookIcon className="h-4 w-4" /> Facebook
             </a>
+          </div>
+          <div>
+            <h3 className="font-heading text-xl font-bold uppercase text-gold">Head Office</h3>
+            <p className="mt-2 text-sm">{headOffice.address}</p>
+            <p className="mt-2 text-sm">{headOffice.phone}</p>
+            <p className="text-sm">{headOffice.email}</p>
           </div>
           <div>
             <h3 className="font-heading text-xl font-bold uppercase text-gold">Our Farms</h3>
