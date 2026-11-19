@@ -4,7 +4,7 @@ import type { SectionRow, TextRow } from "@/types/content";
 export const heroContent = {
   eyebrow: "Conservation",
   heading: "We believe that responsible, environmentally friendly farming and wildlife conservation are interrelated",
-  image: { src: "/images/conservation/GHB-Farms-Vulture.png", alt: "Wildlife conservation at GHB Farms" },
+  image: { src: "/images/conservation/GHB-Farms-Conservation.jpg", alt: "Wildlife conservation at GHB Farms" },
 };
 
 export const vultureIntroRow: TextRow = {
