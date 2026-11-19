@@ -1,5 +1,5 @@
 // ghb-farms/content/conservation.ts
-import type { SectionRow } from "@/types/content";
+import type { SectionRow, TextRow } from "@/types/content";
 
 export const heroContent = {
   eyebrow: "Conservation",
@@ -7,15 +7,18 @@ export const heroContent = {
   image: { src: "/images/conservation/GHB-Farms-Vulture.png", alt: "Wildlife conservation at GHB Farms" },
 };
 
+export const vultureIntroRow: TextRow = {
+  eyebrow: "Vulture Conservation",
+  heading: "We work closely with VulPro, the Vulture Conservation Programme and donate our mortalities to this notable conservation effort.",
+  body: [
+    "Despite the best efforts and necessary measures taken to produce and raise healthy pigs, nature occasionally takes its course – even at GHB Farms. In order to deal with unforeseen deaths in the most humane and environmentally friendly way, we elected to aid conservation by donating our mortalities to the Vulture Conservation Programme, or VulPro, an important and notable effort in vulture rehabilitation.",
+    "As vultures are a key indicator of environmental health, VulPro focuses on the impact of these birds on the environment and, equally important, the environment's impact on their survival. Combining education, good science, networking, capacity building, and knowledge generation for the benefit of both vultures and society, VulPro aims to ultimately influence the well-being of our natural resources and, in this way, positively benefit society.",
+  ],
+};
+
 export const sections: SectionRow[] = [
   {
-    eyebrow: "Vulture conservation",
-    heading: "We work closely with VulPro, the Vulture Conservation Programme and donate our mortalities to this notable conservation effort.",
-    body: [
-      "Despite the best efforts and necessary measures taken to produce and raise healthy pigs, nature occasionally takes its course – even at GHB Farms. In order to deal with unforeseen deaths in the most humane and environmentally friendly way, we elected to aid conservation by donating our mortalities to the Vulture Conservation Programme, or VulPro, an important and notable effort in vulture rehabilitation.",
-      "As vultures are a key indicator of environmental health, VulPro focuses on the impact of these birds on the environment and, equally important, the environment's impact on their survival. Combining education, good science, networking, capacity building, and knowledge generation for the benefit of both vultures and society, VulPro aims to ultimately influence the well-being of our natural resources and, in this way, positively benefit society.",
-      "VulPro strives to:",
-    ],
+    heading: "VulPro strives to:",
     bullets: [
       "Rehabilitate vultures",
       "House and facilitate captive breeding and reintroduction programmes",
@@ -24,19 +27,22 @@ export const sections: SectionRow[] = [
       "Perform veterinary and ecological research",
       "Undertake distribution, dispersal and foraging ranges of vultures",
     ],
+    bulletsPosition: "before",
+    body: [
+      "At both formal and informal venues in South Africa, most notably the rehabilitation and educational centre in Hartbeespoort, in the North West Province, VulPro offers educational talks and interactions for various demographic, age, interest, and expert groups. VulPro, a registered NPC with PBO status, accepts and acknowledges both individual and corporate contributions.",
+      "For more information about Vulpro, please visit www.vulpro.com",
+    ],
     image: { src: "/images/conservation/GHB-Farms-Vulture.png", alt: "VulPro vulture conservation partnership" },
-    imageSide: "right",
+    imageSide: "left",
   },
   {
     eyebrow: "Wild Game",
     heading: "Farming with wild game is more sustainable than farming with cattle.",
     body: [
-      "At both formal and informal venues in South Africa, most notably the rehabilitation and educational centre in Hartbeespoort, in the North West Province, VulPro offers educational talks and interactions for various demographic, age, interest, and expert groups. VulPro, a registered NPC with PBO status, accepts and acknowledges both individual and corporate contributions.",
-      "For more information about Vulpro, please visit www.vulpro.com",
       "Farming with wild game is more sustainable than farming with cattle. Wild game contributes to the farm's ecosystem and allows us to refrain from using chemical fertilisers. We use the game slurry to fertilise our crops and grass. By using natural fertiliser we are able to grow and produce more grass and crops, which we sell as a by-product.",
     ],
     image: { src: "/images/conservation/GHB-Farms-Wildebees-Discover-More-About-Us.png", alt: "Wild game conservation at GHB Farms" },
-    imageSide: "left",
+    imageSide: "right",
   },
   {
     heading: "Hay production",

@@ -5,12 +5,19 @@ export interface SectionRow {
   heading: string;
   body: string[];        // paragraphs
   bullets?: string[];
+  bulletsPosition?: "before" | "after"; // relative to body; defaults to "after"
   quote?: { text: string; attribution?: string };
   image: { src: string; alt: string };
   imageFit?: "cover" | "contain";
   imageSide: "left" | "right";
   cta?: { label: string; href: string };
   pdfLinks?: { label: string; href: string }[];
+}
+
+export interface TextRow {
+  eyebrow?: string;
+  heading: string;
+  body: string[];
 }
 
 export interface Card {

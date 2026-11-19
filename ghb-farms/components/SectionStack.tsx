@@ -51,12 +51,19 @@ export function SectionStack({ sections }: { sections: SectionRow[] }) {
                 <p className="font-heading text-sm uppercase tracking-wide text-gold">{section.eyebrow}</p>
               )}
               <h2 className="mt-2 font-heading text-2xl font-bold text-teal-dark md:text-3xl">{section.heading}</h2>
+              {section.bullets && section.bulletsPosition === "before" && (
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-grey">
+                  {section.bullets.map((bullet, j) => (
+                    <li key={j}>{linkifyParagraph(bullet)}</li>
+                  ))}
+                </ul>
+              )}
               {section.body.map((paragraph, j) => (
                 <p key={j} className="mt-4 text-grey">
                   {linkifyParagraph(paragraph)}
                 </p>
               ))}
-              {section.bullets && (
+              {section.bullets && section.bulletsPosition !== "before" && (
                 <ul className="mt-4 list-disc space-y-2 pl-5 text-grey">
                   {section.bullets.map((bullet, j) => (
                     <li key={j}>{linkifyParagraph(bullet)}</li>
