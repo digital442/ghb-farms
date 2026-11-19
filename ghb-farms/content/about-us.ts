@@ -4,7 +4,7 @@ import type { SectionRow, Card } from "@/types/content";
 export const heroContent = {
   eyebrow: "Who we are",
   heading: "At GHB, we strive to continuously work towards excellence.",
-  image: { src: "/images/about-us/GHB-Farms-About-Rake.png", alt: "GHB Farms agricultural equipment" },
+  image: { src: "/images/safe/GHB-Farms-Accountable-Banner.png", alt: "GHB Farms agricultural operations" },
 };
 
 export const whoWeAreSections: SectionRow[] = [
