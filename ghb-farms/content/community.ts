@@ -35,7 +35,7 @@ export const sections: SectionRow[] = [
     body: [
       "As part of our COVID-19 back-to-school support, we provided highlighters, rulers, pens, pencils, stationery boxes, erasers, sharpeners, glue sticks, scissors, examination pads, water bottles, and lunch boxes to local schoolchildren.",
     ],
-    image: { src: "/images/community/GHB-Farms-Community-02.png", alt: "Stationery donations to local schools" },
+    image: { src: "/images/community/GHB-Farms-Community-Stationery-Donation.jpg", alt: "Stationery donations to local schools" },
     imageSide: "right",
   },
   {
@@ -43,7 +43,7 @@ export const sections: SectionRow[] = [
     body: [
       "We operate an on-farm online-school facility equipped with air conditioning, wifi, rubber flooring, tables and chairs, and electrical and USB outlets.",
     ],
-    image: { src: "/images/community/GHB-Farms-Community-03.png", alt: "On-farm online schooling facility" },
+    image: { src: "/images/community/GHB-Farms-Community-Schooling-Online.jpg", alt: "On-farm online schooling facility" },
     imageSide: "left",
   },
   {
@@ -51,13 +51,13 @@ export const sections: SectionRow[] = [
     body: [
       "We run an annual eye-screening program for our employees. After all, they deserve the chance to enjoy the beauty that surrounds them on our farms and to see clearly the fruits of their labour.",
     ],
-    image: { src: "/images/community/GHB-Farms-Community-04.png", alt: "Annual eye-screening programme for employees" },
+    image: { src: "/images/community/GHB-Farms-Community-Optometry.jpg", alt: "Annual eye-screening programme for employees" },
     imageSide: "right",
   },
   {
     heading: "Nutrition",
     body: ["We provide bi-monthly food packages to support the nutrition of our employees and their families."],
-    image: { src: "/images/community/GHB-Farms-Community-05.png", alt: "Nutrition support for GHB Farms employees" },
+    image: { src: "/images/community/GHB-Farms-Community-Nutrition.jpg", alt: "Nutrition support for GHB Farms employees" },
     imageSide: "left",
   },
   {
@@ -70,7 +70,7 @@ export const sections: SectionRow[] = [
       "As many of the community members are employees at GHB Farms and play a key role in the success of our business, the health and wellbeing of community members remains an area of importance to us. Part of our initiatives is to provide for our communities and maximise efficiency at our farms, and we continue to make regular donations of food to the residents of these communities.",
       "To find out how you or your business can help us improve the lives of our community members, please contact us.",
     ],
-    image: { src: "/images/community/GHB-Farms-Community-06.png", alt: "GHB Farms community upliftment initiatives" },
+    image: { src: "/images/community/GHB-Farms-Community-Uplifting-Solar.jpg", alt: "GHB Farms community upliftment initiatives" },
     imageSide: "right",
     cta: { label: "Contact us", href: "/contact" },
   },
