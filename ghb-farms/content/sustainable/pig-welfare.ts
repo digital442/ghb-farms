@@ -13,7 +13,7 @@ export const sections: SectionRow[] = [
     body: [
       "As one of South Africa's largest pork providers, we are committed to providing the best-possible care to our pigs across all our operations.",
     ],
-    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Responsible-Treatment-01.png", alt: "Responsible animal treatment at GHB Farms" },
+    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Pig-Group-01.jpg", alt: "Responsible animal treatment at GHB Farms" },
     imageSide: "right",
   },
   {
@@ -28,8 +28,7 @@ export const sections: SectionRow[] = [
       "Standardised transport checks",
       "Constant supervision at our operations",
     ],
-    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Responsible-Treatment-01.png", alt: "Animal welfare transport standards at GHB Farms" },
-    imagePosition: "center bottom",
+    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Pig-Group-02.jpg", alt: "Animal welfare transport standards at GHB Farms" },
     imageSide: "left",
     cta: { label: "Find out more", href: "https://topigsnorsvin.co.za/contact-us/" },
   },
