@@ -44,6 +44,7 @@ export function SectionStack({ sections }: { sections: SectionRow[] }) {
                 alt={section.image.alt}
                 fill
                 className={`rounded-lg ${section.imageFit === "contain" ? "object-contain" : "object-cover"}`}
+                style={{ objectPosition: section.imagePosition ?? "center" }}
               />
             </div>
             <div className="w-full md:w-1/2">

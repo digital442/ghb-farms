@@ -9,6 +9,7 @@ export interface SectionRow {
   quote?: { text: string; attribution?: string };
   image: { src: string; alt: string };
   imageFit?: "cover" | "contain";
+  imagePosition?: string; // CSS object-position value; defaults to "center"
   imageSide: "left" | "right";
   cta?: { label: string; href: string };
   pdfLinks?: { label: string; href: string }[];
