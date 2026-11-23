@@ -29,6 +29,7 @@ export const sections: SectionRow[] = [
       "Constant supervision at our operations",
     ],
     image: { src: "/images/sustainable/GHB-Farms-Sustainable-Responsible-Treatment-01.png", alt: "Animal welfare transport standards at GHB Farms" },
+    imagePosition: "center bottom",
     imageSide: "left",
     cta: { label: "Find out more", href: "https://topigsnorsvin.co.za/contact-us/" },
   },
@@ -57,7 +58,7 @@ export const sections: SectionRow[] = [
     body: [
       "We are committed to responsible antibiotic use and continuous monitoring to support the health and welfare of our animals.",
     ],
-    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Housing.png", alt: "Antibiotic monitoring practices at GHB Farms" },
+    image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-Lab.jpg", alt: "Antibiotic monitoring practices at GHB Farms" },
     imageSide: "right",
   },
 ];
