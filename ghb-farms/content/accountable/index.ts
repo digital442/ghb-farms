@@ -33,5 +33,5 @@ export const sections: SectionRow[] = [
 
 export const pillarCards: Card[] = [
   { heading: "Quality Assurance", href: "/accountable/quality-assurance", image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-Lab.jpg", alt: "Quality assurance practices at GHB Farms" } },
-  { heading: "Food Safety & Hygiene Practices", href: "/accountable/food-safety-hygiene-practices", image: { src: "/images/accountable/GHB-Farms-Accountable-Food-Safety-Hygiene-Practices-Food.png", alt: "Food safety and hygiene practices at GHB Farms" } },
+  { heading: "Food Safety & Hygiene Practices", href: "/accountable/food-safety-hygiene-practices", image: { src: "/images/accountable/GHB-Farms-Accountable-Food-Safety-Hygiene-Practices-Washdown.jpg", alt: "Food safety and hygiene practices at GHB Farms" } },
 ];
