@@ -5,6 +5,7 @@ export const heroContent = {
   eyebrow: "Sustainable",
   heading: "Precision soil analysis",
   image: { src: "/images/sustainable/GHB-Farms-Precison-Soil-Analysis-Traktor.png", alt: "Precision soil analysis at GHB Farms" },
+  imagePosition: "center bottom",
 };
 
 export const sections: SectionRow[] = [
@@ -17,6 +18,7 @@ export const sections: SectionRow[] = [
       "We conduct manure production impact assessments as part of our ongoing environmental monitoring.",
     ],
     image: { src: "/images/sustainable/GHB-Farms-Precison-Soil-Analysis-Traktor.png", alt: "Soil analysis practices at GHB Farms" },
+    imagePosition: "center bottom",
     imageSide: "left",
   },
   {
@@ -24,6 +26,7 @@ export const sections: SectionRow[] = [
     body: ["We conduct regular scientific analysis of our soil to ensure continued agricultural health."],
     bullets: ["Calcium Analysis", "Potassium Analysis", "Phosphorus Analysis"],
     image: { src: "/images/sustainable/GHB-Farms-Precison-Soil-Analysis-Traktor.png", alt: "Calcium, potassium, and phosphorus soil analysis" },
+    imagePosition: "center bottom",
     imageSide: "right",
     pdfLinks: [
       { label: "Calcium Analysis Report", href: "/images/sustainable/GHB-soil-scan-1.pdf" },
