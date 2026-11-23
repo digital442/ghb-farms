@@ -22,7 +22,7 @@ export const sections: SectionRow[] = [
 ];
 
 export const corePillarsCards: Card[] = [
-  { heading: "Genetics", href: "/excellence/genetics", image: { src: "/images/what-we-do/GHB-Farms-Core-Pillars-Genetics.png", alt: "GHB Farms genetics program" } },
+  { heading: "Genetics", href: "/excellence/genetics", image: { src: "/images/what-we-do/GHB-Farms-025.png", alt: "GHB Farms genetics program" } },
   { heading: "Modern Facilities", href: "/core-pillars", image: { src: "/images/what-we-do/GHB-Farms-Core-Pillars-Modern-Facilities.png", alt: "GHB Farms modern facilities" } },
   { heading: "People", href: "/core-pillars", image: { src: "/images/what-we-do/GHB-Farms-Core-Pillars-People.png", alt: "The people of GHB Farms" } },
 ];
