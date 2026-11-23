@@ -4,7 +4,7 @@ import type { SectionRow } from "@/types/content";
 export const heroContent = {
   eyebrow: "Sustainable",
   heading: "Environmental Sustainability",
-  image: { src: "/images/sustainable/GHB-Farms-Keeping-Our-Environmental-Footprint-To-a-Minimium-01.jpg", alt: "Keeping our environmental footprint to a minimum" },
+  image: { src: "/images/sustainable/GHB-Farms-Sustainable-Water-Waste-Management.png", alt: "Keeping our environmental footprint to a minimum" },
 };
 
 export const sections: SectionRow[] = [
@@ -22,7 +22,7 @@ export const sections: SectionRow[] = [
       "Our feeding, water, and wastewater practices are structured to minimize environmental impact across every stage of production.",
       "We prioritize water conservation and reuse manure as a nutrient source, partnering with Dr. James Meyer, a water and wastewater quality specialist, to guide our practices.",
     ],
-    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Water-Waste-Management.png", alt: "Water and waste management practices at GHB Farms" },
+    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Reduce-Footprint-Piglet.jpg", alt: "Water and waste management practices at GHB Farms" },
     imageSide: "left",
   },
   {
