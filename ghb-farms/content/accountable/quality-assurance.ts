@@ -4,7 +4,7 @@ import type { SectionRow } from "@/types/content";
 export const heroContent = {
   eyebrow: "Accountable",
   heading: "Quality assurance",
-  image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-Soil.jpg", alt: "Quality assurance practices at GHB Farms" },
+  image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-Lab.jpg", alt: "Quality assurance practices at GHB Farms" },
 };
 
 export const sections: SectionRow[] = [
