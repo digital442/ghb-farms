@@ -25,8 +25,7 @@ export const sections: SectionRow[] = [
     heading: "Soil Analysis",
     body: ["We conduct regular scientific analysis of our soil to ensure continued agricultural health."],
     bullets: ["Calcium Analysis", "Potassium Analysis", "Phosphorus Analysis"],
-    image: { src: "/images/sustainable/GHB-Farms-Precison-Soil-Analysis-Traktor.png", alt: "Calcium, potassium, and phosphorus soil analysis" },
-    imagePosition: "center bottom",
+    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Soil-Analysis-Closeup.jpg", alt: "Calcium, potassium, and phosphorus soil analysis" },
     imageSide: "right",
     pdfLinks: [
       { label: "Calcium Analysis Report", href: "/images/sustainable/GHB-soil-scan-1.pdf" },
