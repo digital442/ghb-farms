@@ -25,7 +25,7 @@ export const sections: SectionRow[] = [
       "As a proud supplier of Eskort Ltd, we have been a part of millions of your meals for over 60 years.",
       "We pride ourselves in supplying food that carries a 100% safety assurance to our customers, backed by strict protocols, farm-level safety standards, and careful veterinary medication practices.",
     ],
-    image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-John-Deere.png", alt: "Food safety and quality practices at GHB Farms" },
+    image: { src: "/images/accountable/GHB-Farms-Accountable-Food-Safety-Quality-Corn.jpg", alt: "Food safety and quality practices at GHB Farms" },
     imageSide: "left",
     cta: { label: "Learn about Farm to Fork", href: "/farm-to-fork" },
   },
