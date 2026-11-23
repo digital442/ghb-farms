@@ -13,7 +13,7 @@ export const sections: SectionRow[] = [
     body: [
       "Uncompromised hygiene practices, traceability, and rigid quality control measures are ways in which we ensure that we produce quality pork. The first two aspects of our cornerstone philosophy – Sustainable and Accountable – are addressed by our superior farm practices, including food safety and traceability systems, pig welfare and sow-friendly practices, and biosecurity and environmental sustainability programmes.",
     ],
-    image: { src: "/images/accountable/GHB-Farms-Accountability.jpg", alt: "GHB Farms accountability philosophy" },
+    image: { src: "/images/accountable/GHB-Farms-Accountable-Team-Haybales.jpg", alt: "GHB Farms accountability philosophy" },
     imageSide: "right",
   },
   {
