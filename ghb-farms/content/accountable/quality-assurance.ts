@@ -4,7 +4,7 @@ import type { SectionRow } from "@/types/content";
 export const heroContent = {
   eyebrow: "Accountable",
   heading: "Quality assurance",
-  image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-John-Deere.png", alt: "Quality assurance practices at GHB Farms" },
+  image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-Soil.jpg", alt: "Quality assurance practices at GHB Farms" },
 };
 
 export const sections: SectionRow[] = [
@@ -14,7 +14,7 @@ export const sections: SectionRow[] = [
       "We are committed to providing our customers with safe, high-quality products. After all, you and your family deserve no less.",
       "We maintain strict pathogen and antibiotic-free policies, tracking each weekly piglet batch from birth through to the abattoir.",
     ],
-    image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-John-Deere.png", alt: "Quality assurance monitoring at GHB Farms" },
+    image: { src: "/images/accountable/GHB-Farms-Accountable-Quality-Assurance-Soil.jpg", alt: "Quality assurance monitoring at GHB Farms" },
     imageSide: "right",
   },
   {
