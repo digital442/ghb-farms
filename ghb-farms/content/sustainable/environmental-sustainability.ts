@@ -30,7 +30,7 @@ export const sections: SectionRow[] = [
     body: [
       "Dr. James Meyer holds an MSc (1990) and contributed to the SA Water Quality Guidelines (1993/1996), receiving the Stander Most Promising Researcher Award in 1994 and a PhD in 1998. He was awarded a bronze medal in 2000 and presented at the 10th World Conference on Animal Production in 2008. He is a co-author of Game Ranch Management (5th Edition) and serves as Technical Manager at Virbac South Africa, having contributed to Water Research Commission reports in 2021 and advised SAPPO and the Department of Water and Sanitation. Outside of his professional work, Dr. Meyer has competed in skydiving, including in Dubai in 2010 and the World Cup Canopy Piloting in 2019, and serves on the board of the Parachute Association of South Africa.",
     ],
-    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Water-Waste-Management.png", alt: "Dr. James Meyer, water quality specialist partner" },
+    image: { src: "/images/sustainable/GHB-Farms-Sustainable-Dr-Meyer.jpg", alt: "Dr. James Meyer, water quality specialist partner" },
     imageSide: "right",
   },
 ];
